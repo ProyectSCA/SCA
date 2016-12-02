@@ -63,7 +63,7 @@
                <ul>
                     <li><a href="/Vistas/Catalogos/Procesador.aspx">Procesador</a></li>
                     <li><a href="/Vistas/Catalogos/SistemaOperativo.aspx">Sistema Operativo</a></li>
-                    <li><a href="#">Tipo Computadora</a></li>
+                    <li><a href="/Vistas/Catalogos/TipoComputadora.aspx">Tipo Computadora</a></li>
                     <li><a href="#">Marca</a></li>
                </ul>
             <li><a href="#">Tipo de Accesorio de Computo</a></li>
