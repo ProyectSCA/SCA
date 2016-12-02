@@ -267,6 +267,7 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Vistas\Activos\AccesoriosComputo.aspx" />
+    <Content Include="Vistas\Activos\Mobiliario.aspx" />
     <Content Include="Vistas\Catalogos\Procesador.aspx" />
     <Content Include="Vistas\Catalogos\SistemaOperativo.aspx" />
     <Content Include="Vistas\Catalogos\TipoComputadora.aspx" />
@@ -461,6 +462,13 @@
     </Compile>
     <Compile Include="Vistas\Activos\AccesoriosComputo.aspx.designer.cs">
       <DependentUpon>AccesoriosComputo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Activos\Mobiliario.aspx.cs">
+      <DependentUpon>Mobiliario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Activos\Mobiliario.aspx.designer.cs">
+      <DependentUpon>Mobiliario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Catalogos\Procesador.aspx.cs">
       <DependentUpon>Procesador.aspx</DependentUpon>
