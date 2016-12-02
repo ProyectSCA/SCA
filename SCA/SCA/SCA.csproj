@@ -399,8 +399,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Clases\Beans\Procesador.cs" />
+    <Compile Include="Clases\Beans\SistemaOperativo.cs" />
     <Compile Include="Clases\Modelos\Conexion.cs" />
     <Compile Include="Clases\Modelos\ModeloProcesador.cs" />
+    <Compile Include="Clases\Modelos\ModeloSistemaOperativo.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
