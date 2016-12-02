@@ -266,6 +266,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Vistas\Activos\AccesoriosComputo.aspx" />
     <Content Include="Vistas\Catalogos\Procesador.aspx" />
     <Content Include="Vistas\Modelo\Demo.aspx" />
     <Content Include="Web.config" />
@@ -448,6 +449,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Activos\AccesoriosComputo.aspx.cs">
+      <DependentUpon>AccesoriosComputo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Activos\AccesoriosComputo.aspx.designer.cs">
+      <DependentUpon>AccesoriosComputo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Catalogos\Procesador.aspx.cs">
       <DependentUpon>Procesador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -470,7 +478,6 @@
     <Folder Include="css\sm-mint\" />
     <Folder Include="css\sm-simple\" />
     <Folder Include="NewFolder1\" />
-    <Folder Include="Vistas\Activos\" />
     <Folder Include="Vistas\Bajas\" />
     <Folder Include="Vistas\HojaResponsabilidad\" />
     <Folder Include="Vistas\ReasignacionActivos\" />
