@@ -52,7 +52,7 @@
     <li><a >Activos</a>
       <ul>
         <li><a href="#">Computadoras</a></li>
-        <li><a href="#">Accesorios de Computo</a></li>
+        <li><a href="/Vistas/Activos/AccesoriosComputo.aspx">Accesorios de Computo</a></li>
         <li><a href="#">Mobiliario</a></li>
       </ul>
     </li>
