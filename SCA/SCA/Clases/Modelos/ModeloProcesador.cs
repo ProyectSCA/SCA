@@ -19,7 +19,7 @@ namespace SCA.Clases.Modelos
         //Metodo para crear Procesador
         public void crearProcesador(Procesador p)
         {
-            String insert = "insert into Procesador(nombre) values('"+p.Nombre+"') ";
+            String insert = "EXEC ingreso_procesador '"+p.Nombre+"'";
             ejecutar(insert);
         }
         //Metodo que ejecuta Insert, Update, Delete
