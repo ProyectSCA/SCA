@@ -403,11 +403,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Clases\Beans\ActivoComputadora.cs" />
     <Compile Include="Clases\Beans\MarcaComputadora.cs" />
     <Compile Include="Clases\Beans\Procesador.cs" />
     <Compile Include="Clases\Beans\SistemaOperativo.cs" />
     <Compile Include="Clases\Beans\TipoComputadora.cs" />
     <Compile Include="Clases\Modelos\Conexion.cs" />
+    <Compile Include="Clases\Modelos\ModeloActivoComputadora.cs" />
     <Compile Include="Clases\Modelos\ModeloMarcaComputadora.cs" />
     <Compile Include="Clases\Modelos\ModeloProcesador.cs" />
     <Compile Include="Clases\Modelos\ModeloSistemaOperativo.cs" />
