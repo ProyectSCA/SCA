@@ -70,7 +70,7 @@
             <li><a href="#">Tipo de Mobiliario</a></li>
                 <li><a href="#">Proveedores</a></li>
                <li><a href="#">Empleados</a></li>
-               <li><a href="#">Departamentos</a></li>
+               <li><a href="/Vistas/Catalogos/Departamento.aspx">Departamentos</a></li>
                <li><a href="#">Usuarios</a></li>
         </ul>
     </li>
