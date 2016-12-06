@@ -268,6 +268,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Vistas\Activos\AccesoriosComputo.aspx" />
     <Content Include="Vistas\Activos\Mobiliario.aspx" />
+    <Content Include="Vistas\Catalogos\MarcaComputadora.aspx" />
     <Content Include="Vistas\Catalogos\Procesador.aspx" />
     <Content Include="Vistas\Catalogos\SistemaOperativo.aspx" />
     <Content Include="Vistas\Catalogos\TipoComputadora.aspx" />
@@ -404,11 +405,15 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Clases\Beans\ActivoComputadora.cs" />
+    <Compile Include="Clases\Beans\MarcaComputadora.cs" />
     <Compile Include="Clases\Beans\Procesador.cs" />
     <Compile Include="Clases\Beans\SistemaOperativo.cs" />
     <Compile Include="Clases\Beans\TipoComputadora.cs" />
     <Compile Include="Clases\Beans\Tipo_accesorio.cs" />
     <Compile Include="Clases\Modelos\Conexion.cs" />
+    <Compile Include="Clases\Modelos\ModeloActivoComputadora.cs" />
+    <Compile Include="Clases\Modelos\ModeloMarcaComputadora.cs" />
     <Compile Include="Clases\Modelos\ModeloProcesador.cs" />
     <Compile Include="Clases\Modelos\ModeloSistemaOperativo.cs" />
     <Compile Include="Clases\Modelos\ModeloTipoAccesorio.cs" />
@@ -473,6 +478,13 @@
     </Compile>
     <Compile Include="Vistas\Activos\Mobiliario.aspx.designer.cs">
       <DependentUpon>Mobiliario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\MarcaComputadora.aspx.cs">
+      <DependentUpon>MarcaComputadora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\MarcaComputadora.aspx.designer.cs">
+      <DependentUpon>MarcaComputadora.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Catalogos\Procesador.aspx.cs">
       <DependentUpon>Procesador.aspx</DependentUpon>
