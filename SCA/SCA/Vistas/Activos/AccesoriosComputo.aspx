@@ -95,7 +95,7 @@
                     <div class="form-group col-md-6">
                         <label for="select" class="col-lg-2 control-label">Departamento</label>
                         <div class="col-lg-10">
-                            <asp:DropDownList ID="DropDepto" runat="server" CssClass="form-control" DataSourceID="Depto2" DataTextField="nombre" DataValueField="id_departamento" OnSelectedIndexChanged="DropDepto_SelectedIndexChanged">
+                            <asp:DropDownList ID="DropDepto" runat="server" CssClass="form-control" DataSourceID="Depto2" DataTextField="nombre" DataValueField="id_departamento" OnSelectedIndexChanged="DropDepto_SelectedIndexChanged" AutoPostBack="True">
                                 <asp:ListItem>Seleccionar</asp:ListItem>
                             </asp:DropDownList>                
                             <asp:SqlDataSource ID="Depto2" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [id_departamento], [nombre] FROM [Departamento]"></asp:SqlDataSource>
