@@ -22,6 +22,15 @@ namespace SCA.Vistas.Activos {
         protected global::System.Web.UI.WebControls.DropDownList DropTipoAccesorio;
         
         /// <summary>
+        /// Control SqlDataSource1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        
+        /// <summary>
         /// Control TxtMarca.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace SCA.Vistas.Activos {
         protected global::System.Web.UI.WebControls.DropDownList DropProveedor;
         
         /// <summary>
+        /// Control Proveedor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Proveedor;
+        
+        /// <summary>
         /// Control RbtnDepreciacion.
         /// </summary>
         /// <remarks>
@@ -112,13 +130,31 @@ namespace SCA.Vistas.Activos {
         protected global::System.Web.UI.WebControls.DropDownList DropDepto;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control Depto2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.SqlDataSource Depto2;
+        
+        /// <summary>
+        /// Control DropEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropEmpleado;
+        
+        /// <summary>
+        /// Control Empleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Empleado;
         
         /// <summary>
         /// Control TxtPrefijo.

@@ -13,5 +13,18 @@ namespace SCA.Vistas.Activos
         {
 
         }
+
+        protected void DropDepto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            Empleado.DataBind();
+            DropEmpleado.DataBind();
+            
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

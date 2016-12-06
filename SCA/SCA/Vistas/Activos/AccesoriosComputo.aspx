@@ -17,9 +17,10 @@
                     <div class="form-group">
                         <label for="inputAccesorio" class="col-lg-2 control-label">Accesorio</label>
                          <div class="col-lg-10">
-                            <asp:DropDownList ID="DropTipoAccesorio" runat="server" CssClass="form-control">
+                            <asp:DropDownList ID="DropTipoAccesorio" runat="server" CssClass="form-control" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="nombre">
                                
                              </asp:DropDownList>
+                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [nombre] FROM [Tipo_Accesorio]"></asp:SqlDataSource>
                         </div>
                     </div>
                     <div class="form-group">
@@ -58,7 +59,8 @@
                         </div> 
                          <label for="inputProveedor" class="col-lg-2 control-label">Proveedor</label>
                          <div class="col-lg-5">
-                            <asp:DropDownList ID="DropProveedor" runat="server" CssClass="form-control"></asp:DropDownList>
+                            <asp:DropDownList ID="DropProveedor" runat="server" CssClass="form-control" DataSourceID="Proveedor" DataTextField="nombre" DataValueField="nombre"></asp:DropDownList>
+                             <asp:SqlDataSource ID="Proveedor" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [nombre] FROM [Proveedor]"></asp:SqlDataSource>
                         </div>  
                     </div>
                     
@@ -93,13 +95,24 @@
                     <div class="form-group col-md-6">
                         <label for="select" class="col-lg-2 control-label">Departamento</label>
                         <div class="col-lg-10">
-                            <asp:DropDownList ID="DropDepto" runat="server" CssClass="form-control"></asp:DropDownList>                
+                            <asp:DropDownList ID="DropDepto" runat="server" CssClass="form-control" DataSourceID="Depto2" DataTextField="nombre" DataValueField="id_departamento" OnSelectedIndexChanged="DropDepto_SelectedIndexChanged">
+                                <asp:ListItem>Seleccionar</asp:ListItem>
+                            </asp:DropDownList>                
+                            <asp:SqlDataSource ID="Depto2" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [id_departamento], [nombre] FROM [Departamento]"></asp:SqlDataSource>
+                            <%Empleado.DataBind();%>
+                            <%DropEmpleado.DataBind(); %>
+                           
                         </div>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="select" class="col-lg-2 control-label">Empleado</label>
                         <div class="col-lg-10">
-                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"></asp:DropDownList>                
+                            <asp:DropDownList ID="DropEmpleado" runat="server" CssClass="form-control" DataSourceID="Empleado" DataTextField="nombre" DataValueField="nombre" EnableViewState="False"></asp:DropDownList>                
+                            <asp:SqlDataSource ID="Empleado" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [nombre], [id_empleado] FROM [Empleado] WHERE ([fk_id_departamento] = @fk_id_departamento)">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="DropDepto" Name="fk_id_departamento" PropertyName="SelectedValue" Type="decimal" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
                         </div>
                     </div>
                     <div class="form-group col-md-6">
@@ -119,7 +132,7 @@
                 <div >
 
                     <asp:Button ID="Button1" CssClass="btn btn-default" runat="server" Text="Cancelar" />
-                    <asp:Button ID="Button2" CssClass="btn btn-primary" runat="server" Text="Guardar" />
+                    <asp:Button ID="Button2" CssClass="btn btn-primary" runat="server" Text="Guardar" OnClick="Button2_Click" />
                 </div>
          </div> 
     </form>
