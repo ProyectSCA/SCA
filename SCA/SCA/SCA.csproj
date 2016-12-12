@@ -490,6 +490,7 @@
     <Compile Include="Vistas\Activos\Mobiliario.aspx.designer.cs">
       <DependentUpon>Mobiliario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Activos\ModeloComputadora.cs" />
     <Compile Include="Vistas\Catalogos\MarcaComputadora.aspx.cs">
       <DependentUpon>MarcaComputadora.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

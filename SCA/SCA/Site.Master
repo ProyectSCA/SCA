@@ -51,7 +51,7 @@
     <li><a href="/Default.aspx">Inicio</a></li>
     <li><a >Activos</a>
       <ul>
-        <li><a href="#">Computadoras</a></li>
+        <li><a href="/Vistas/Activos/Computadoras.aspx">Computadoras</a></li>
         <li><a href="/Vistas/Activos/AccesoriosComputo.aspx">Accesorios de Computo</a></li>
         <li><a href="/Vistas/Activos/Mobiliario.aspx">Mobiliario</a></li>
       </ul>

@@ -13,7 +13,7 @@ namespace SCA.Clases.Beans
         private int memoria;
         private int capacidad_hdd;
         private string codigo_inventario;
-        private DateTime fecha_compra;
+        private string fecha_compra;
         private int no_factura;
         private float precio;
         private DateTime fecha_baja;
@@ -106,7 +106,7 @@ namespace SCA.Clases.Beans
             }
         }
 
-        public DateTime Fecha_compra
+        public string Fecha_compra
         {
             get
             {

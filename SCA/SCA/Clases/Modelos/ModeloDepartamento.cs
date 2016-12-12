@@ -16,6 +16,24 @@ namespace SCA.Clases.Modelos
             c = new Conexion();
         }
 
+        public Departamento darCodigoDepto(int id)
+        {
+            Departamento d = null;
+
+            String select = "EXEC consultaCodigoDepto "+id+"";
+            c.con.Open();
+            c.sen = new SqlCommand(select, c.con);
+            c.rs = c.sen.ExecuteReader();
+
+            if (c.rs.Read())
+            {
+                d = new Departamento();
+                d.Codigo_departamento = c.rs[0].ToString();                
+            }
+            c.con.Close();
+            return d;
+        }
+
         public Boolean crearDepartamento(Departamento d)
         {
             String insert = "EXEC ingreso_departamento '" + d.Codigo_departamento + "','" + d.Nombre + "','" + d.Descripcion + "'";

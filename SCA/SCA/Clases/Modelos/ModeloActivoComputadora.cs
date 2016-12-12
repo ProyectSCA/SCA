@@ -18,7 +18,7 @@ namespace SCA.Clases.Modelos
 
         public Boolean crearModeloActivoComputadora(ActivoComputadora ac)
         {
-            String insert = "Exec ingreso_activocomputadora '"+ac.Modelo+"','"+ac.No_serie+"',"+ac.Memoria+","+ac.Capacidad_hdd+",'"+ac.Codigo_inventario+"','"+ac.Fecha_compra+"',"+ac.No_factura+","+ac.Precio+","+ac.Precio_actual+",'"+ac.Direccion_ip+"',"+ac.Id_procesador+ ","+ac.Id_so+ ",,"+ac.Id_empleado+ ",,"+ac.Id_tipocomputadora+ ","+ac.Id_marca+ ","+ac.Id_cuenta+ ","+ac.Id_proveedor+"";
+            String insert = "Exec ingreso_activocomputadora '"+ac.Modelo+"','"+ac.No_serie+"',"+ac.Memoria+","+ac.Capacidad_hdd+",'"+ac.Codigo_inventario+"','"+ac.Fecha_compra+"',"+ac.No_factura+","+ac.Precio+","+ac.Precio_actual+",'"+ac.Direccion_ip+"',"+ac.Id_procesador+ ","+ac.Id_so+ ","+ac.Id_empleado+ ","+ac.Id_tipocomputadora+ ","+ac.Id_marca+ ","+ac.Id_cuenta+ ","+ac.Id_proveedor+"";
             ejecutar(insert);
             return true;
         }

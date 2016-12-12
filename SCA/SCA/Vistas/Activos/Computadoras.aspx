@@ -159,8 +159,8 @@
                     <div class="form-group col-md-6">
                         <label for="select" class="col-lg-2 control-label">Departamento</label>
                         <div class="col-lg-10">
-                            <asp:DropDownList ID="DropDepto" runat="server" CssClass="form-control"  DataTextField="nombre" DataValueField="id_departamento" OnSelectedIndexChanged="DropDepto_SelectedIndexChanged" AutoPostBack="True" DataSourceID="SqlDataSource6">
-                                <asp:ListItem>Seleccionar</asp:ListItem>
+                            <asp:DropDownList ID="DropDepto" AppendDataBoundItems="True" runat="server" CssClass="form-control"  DataTextField="nombre" DataValueField="id_departamento" OnSelectedIndexChanged="DropDepto_SelectedIndexChanged" AutoPostBack="True" DataSourceID="SqlDataSource6">
+                               <asp:ListItem Text="Seleccionar" Value="0" />
                             </asp:DropDownList>   
                             <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [id_departamento], [nombre] FROM [Departamento]"></asp:SqlDataSource>
                         </div>
@@ -168,7 +168,7 @@
                     <div class="form-group col-md-6">
                         <label for="select" class="col-lg-2 control-label">Empleado</label>
                         <div class="col-lg-10">
-                            <asp:DropDownList ID="DropEmpleado" runat="server" CssClass="form-control" DataTextField="nombre" DataValueField="nombre" EnableViewState="False" DataSourceID="SqlDataSource7"></asp:DropDownList>
+                            <asp:DropDownList ID="DropEmpleado"  runat="server" CssClass="form-control" DataTextField="nombre" DataValueField="id_empleado" EnableViewState="False" DataSourceID="SqlDataSource7"></asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [id_empleado], [nombre] FROM [Empleado] WHERE ([fk_id_departamento] = @fk_id_departamento)">
                                 <SelectParameters>
                                     <asp:ControlParameter ControlID="DropDepto" Name="fk_id_departamento" PropertyName="SelectedValue" Type="Decimal" />
@@ -176,17 +176,28 @@
                             </asp:SqlDataSource>
                         </div>
                     </div>
+                    
                     <div class="form-group col-md-6">
                         <label for="inputSerie" class="col-lg-2 control-label">Codigo de Inventario</label>
                         <div class="col-lg-3">   
-                            <asp:TextBox ID="TxtPrefico" cssclass="form-control" runat="server" EnableViewState="False"></asp:TextBox>     
-                           <!--<asp:TextBox id="TxtPrefijo" class="form-control"   runat="server"/>-->
+                            <asp:label ID="LblPrefijo" cssclass="form-control" runat="server" Text=""></asp:label>     
+                           
                         </div>   
                         
                          <div class="col-lg-3">                   
-                           <asp:TextBox id="TxtSufijo" class="form-control" placeholder="Sufijo" runat="server"/>                          
+                           <asp:TextBox id="TxtSufijo" class="form-control" placeholder="Sufijo" runat="server" OnTextChanged="TxtSufijo_TextChanged"/>                          
                         </div>  
-                    </div>     
+                    </div>   
+            
+                    <div class="form-group col-md-6">
+                        <label for="inputSerie" class="col-lg-2 control-label">Direccion IP</label>
+                        <div class="col-lg-3">   
+                            
+                            <asp:TextBox ID="TxtIP" cssclass="form-control" runat="server" EnableViewState="False"></asp:TextBox>     
+                                                       
+                        </div>                          
+                    </div>       
+
         </div>            
     </div>
      <div class="form-group col-md-5 col-md-offset-5 ">

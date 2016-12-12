@@ -229,22 +229,13 @@ namespace SCA.Vistas.Activos {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource7;
         
         /// <summary>
-        /// Control TxtPrefico.
+        /// Control LblPrefijo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPrefico;
-        
-        /// <summary>
-        /// Control TxtPrefijo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPrefijo;
+        protected global::System.Web.UI.WebControls.Label LblPrefijo;
         
         /// <summary>
         /// Control TxtSufijo.
@@ -254,6 +245,15 @@ namespace SCA.Vistas.Activos {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtSufijo;
+        
+        /// <summary>
+        /// Control TxtIP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtIP;
         
         /// <summary>
         /// Control Button1.
