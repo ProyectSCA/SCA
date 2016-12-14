@@ -415,6 +415,7 @@
     <Compile Include="Clases\Beans\Empleado.cs" />
     <Compile Include="Clases\Beans\MarcaComputadora.cs" />
     <Compile Include="Clases\Beans\Procesador.cs" />
+    <Compile Include="Clases\Beans\Proveedores.cs" />
     <Compile Include="Clases\Beans\SistemaOperativo.cs" />
     <Compile Include="Clases\Beans\TipoComputadora.cs" />
     <Compile Include="Clases\Beans\Tipo_accesorio.cs" />
@@ -424,6 +425,7 @@
     <Compile Include="Clases\Modelos\ModeloEmpleado.cs" />
     <Compile Include="Clases\Modelos\ModeloMarcaComputadora.cs" />
     <Compile Include="Clases\Modelos\ModeloProcesador.cs" />
+    <Compile Include="Clases\Modelos\ModeloProveedores.cs" />
     <Compile Include="Clases\Modelos\ModeloSistemaOperativo.cs" />
     <Compile Include="Clases\Modelos\ModeloTipoAccesorio.cs" />
     <Compile Include="Clases\Modelos\ModeloTipoComputadora.cs" />
