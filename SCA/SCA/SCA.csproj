@@ -272,11 +272,13 @@
     <Content Include="Vistas\Catalogos\Empleado.aspx" />
     <Content Include="Vistas\Catalogos\MarcaComputadora.aspx" />
     <Content Include="Vistas\Catalogos\Procesador.aspx" />
+    <Content Include="Vistas\Catalogos\Proveedores.aspx" />
     <Content Include="Vistas\Catalogos\SistemaOperativo.aspx" />
     <Content Include="Vistas\Catalogos\TipoComputadora.aspx" />
     <Content Include="Vistas\Catalogos\Tipo_Accesorio.aspx" />
     <Content Include="Vistas\Catalogos\Tipo_Activo_Mobiliario.aspx" />
     <Content Include="Vistas\Catalogos\Departamento.aspx" />
+    <Content Include="Vistas\Catalogos\Usuarios.aspx" />
     <Content Include="Vistas\Modelo\Demo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -515,6 +517,13 @@
     <Compile Include="Vistas\Catalogos\Procesador.aspx.designer.cs">
       <DependentUpon>Procesador.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Catalogos\Proveedores.aspx.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Proveedores.aspx.designer.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Catalogos\SistemaOperativo.aspx.cs">
       <DependentUpon>SistemaOperativo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -549,6 +558,13 @@
     </Compile>
     <Compile Include="Vistas\Catalogos\Departamento.aspx.designer.cs">
       <DependentUpon>Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Modelo\Demo.aspx.cs">
       <DependentUpon>Demo.aspx</DependentUpon>
