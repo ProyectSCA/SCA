@@ -14,9 +14,15 @@
                             <div class="col-lg-6">
                                 <asp:TextBox ID="TxtCodigoDepartamento" class="form-control" placeholder="codigo del departamento" runat="server" />
                             </div>
+                            <div class="form-group">
+
+                            </div>
                             <label for="inputEmail" class="col-lg-6 control-label">Nombre del Departamento</label>
                             <div class="col-lg-6">
                                 <asp:TextBox ID="TxtNombreDepartamento" class="form-control" placeholder="Nombre del Departamento" runat="server" />
+                            </div>
+                            <div class="form-group">
+
                             </div>
                             <label for="inputEmail" class="col-lg-6 control-label">Descripcion</label>
                             <div class="col-lg-6">
@@ -31,11 +37,18 @@
             </div>
         </div>
         <div class="col-md-6">
-            <asp:GridView ID="TablaDepartamento" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_departamento" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="TablaDepartamento" cssClass="table table-striper" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_departamento" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
-                    <asp:CommandField HeaderText="Operaciones" ShowDeleteButton="True" ShowEditButton="True" />
-                    <asp:BoundField DataField="codigo_departamento" HeaderText="Codigo del Departamento" SortExpression="codigo_departamento" />
+                    <asp:CommandField HeaderText="Operaciones" ShowDeleteButton="True" ShowEditButton="True" >
+                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                    </asp:CommandField>
+                    <asp:BoundField DataField="codigo_departamento" HeaderText="Codigo del Departamento" SortExpression="codigo_departamento" >
+                    <FooterStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                    </asp:BoundField>
                     <asp:BoundField DataField="nombre" HeaderText="Nombre del Departamento" SortExpression="nombre" />
                     <asp:BoundField DataField="descripcion" HeaderText="Descripcion del Departamento" SortExpression="descripcion" />
                 </Columns>
@@ -75,3 +88,4 @@
         </div>
         </form>
 </asp:Content>
+

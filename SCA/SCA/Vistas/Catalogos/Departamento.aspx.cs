@@ -14,6 +14,7 @@ namespace SCA.Vistas.Catalogos
         private ModeloDepartamento md;
         protected void Page_Load(object sender, EventArgs e)
         {
+            TxtCodigoDepartamento.Focus();
             md = new ModeloDepartamento();
         }
 
@@ -28,7 +29,7 @@ namespace SCA.Vistas.Catalogos
             TxtCodigoDepartamento.Text = "";
             TxtNombreDepartamento.Text = "";
             TxtDescripcionDepartamento.Text = "";
-            TxtCodigoDepartamento.Focus();
+            Response.Redirect("/Vistas/Catalogos/Departamento.aspx");
 
             SqlDataSource1.DataBind();
             TablaDepartamento.DataBind();
