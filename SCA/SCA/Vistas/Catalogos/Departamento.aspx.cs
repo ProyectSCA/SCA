@@ -12,6 +12,7 @@ namespace SCA.Vistas.Catalogos
     public partial class Departamento : System.Web.UI.Page
     {
         private ModeloDepartamento md;
+        string script = @"<script týpe='text/javascript'>alert('Error: campo o campos vacios');</script>";
         protected void Page_Load(object sender, EventArgs e)
         {
             TxtCodigoDepartamento.Focus();
@@ -21,15 +22,23 @@ namespace SCA.Vistas.Catalogos
         protected void btnInsertar(object sender, EventArgs e)
         {
             Clases.Beans.Departamento d = new Clases.Beans.Departamento();
-            d.Codigo_departamento = TxtCodigoDepartamento.Text;
-            d.Nombre = TxtNombreDepartamento.Text;
-            d.Descripcion = TxtDescripcionDepartamento.Text;
 
-            md.crearDepartamento(d);
-            TxtCodigoDepartamento.Text = "";
-            TxtNombreDepartamento.Text = "";
-            TxtDescripcionDepartamento.Text = "";
-            Response.Redirect("/Vistas/Catalogos/Departamento.aspx");
+            if (String.IsNullOrEmpty(TxtCodigoDepartamento.Text) || String.IsNullOrEmpty(TxtNombreDepartamento.Text) || String.IsNullOrEmpty(TxtDescripcionDepartamento.Text))
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+            }
+            else
+            {
+                d.Codigo_departamento = TxtCodigoDepartamento.Text;
+                d.Nombre = TxtNombreDepartamento.Text;
+                d.Descripcion = TxtDescripcionDepartamento.Text;
+
+                md.crearDepartamento(d);
+                TxtCodigoDepartamento.Text = "";
+                TxtNombreDepartamento.Text = "";
+                TxtDescripcionDepartamento.Text = "";
+                Response.Redirect("/Vistas/Catalogos/Departamento.aspx");
+            }
 
             SqlDataSource1.DataBind();
             TablaDepartamento.DataBind();
