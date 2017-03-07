@@ -54,11 +54,11 @@
      
                      <div class="form-group">
                         <label for="inputModelo" class="col-lg-2 control-label">Fecha</label>
-                        <div class="col-lg-3">                
-                           <asp:TextBox Id="FechaCompra" class="form-control" placeholder="Dia/Mes/Año" runat="server" ></asp:TextBox>
+                        <div class="col-lg-4">                
+                           <asp:TextBox Id="FechaCompra" class="form-control"  runat="server" TextMode="Date" ></asp:TextBox>
                         </div> 
                          <label for="inputProveedor" class="col-lg-2 control-label">Proveedor</label>
-                         <div class="col-lg-5">
+                         <div class="col-lg-4">
                             <asp:DropDownList ID="DropProveedor" runat="server" CssClass="form-control" DataSourceID="Proveedor" DataTextField="nombre" DataValueField="nombre"></asp:DropDownList>
                              <asp:SqlDataSource ID="Proveedor" runat="server" ConnectionString="<%$ ConnectionStrings:SCA.Properties.Settings.Conexion %>" SelectCommand="SELECT [nombre] FROM [Proveedor]"></asp:SqlDataSource>
                         </div>  
