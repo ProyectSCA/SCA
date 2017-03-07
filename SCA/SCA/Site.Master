@@ -68,10 +68,10 @@
                </ul>
             <li><a href="/Vistas/Catalogos/Tipo_Accesorio.aspx">Tipo de Accesorio de Computo</a></li>
             <li><a href="#">Tipo de Mobiliario</a></li>
-                <li><a href="#">Proveedores</a></li>
-               <li><a href="#">Empleados</a></li>
+                <li><a href="/Vistas/Catalogos/Proveedores.aspx">Proveedores</a></li>
+               <li><a href="/Vistas/Catalogos/Empleado.aspx">Empleados</a></li>
                <li><a href="/Vistas/Catalogos/Departamento.aspx">Departamentos</a></li>
-               <li><a href="#">Usuarios</a></li>
+               <li><a href="/Vistas/Catalogos/Usuarios.aspx">Usuarios</a></li>
         </ul>
     </li>
     <li><a href="#">Reasignación de Activos</a>

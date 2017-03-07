@@ -269,13 +269,16 @@
     <Content Include="Vistas\Activos\AccesoriosComputo.aspx" />
     <Content Include="Vistas\Activos\Computadoras.aspx" />
     <Content Include="Vistas\Activos\Mobiliario.aspx" />
+    <Content Include="Vistas\Catalogos\Empleado.aspx" />
     <Content Include="Vistas\Catalogos\MarcaComputadora.aspx" />
     <Content Include="Vistas\Catalogos\Procesador.aspx" />
+    <Content Include="Vistas\Catalogos\Proveedores.aspx" />
     <Content Include="Vistas\Catalogos\SistemaOperativo.aspx" />
     <Content Include="Vistas\Catalogos\TipoComputadora.aspx" />
     <Content Include="Vistas\Catalogos\Tipo_Accesorio.aspx" />
     <Content Include="Vistas\Catalogos\Tipo_Activo_Mobiliario.aspx" />
     <Content Include="Vistas\Catalogos\Departamento.aspx" />
+    <Content Include="Vistas\Catalogos\Usuarios.aspx" />
     <Content Include="Vistas\Modelo\Demo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -410,8 +413,10 @@
     <Compile Include="Clases\Beans\ActivoComputadora.cs" />
     <Compile Include="Clases\Beans\Activo_Accesorio.cs" />
     <Compile Include="Clases\Beans\Departamento.cs" />
+    <Compile Include="Clases\Beans\Empleado.cs" />
     <Compile Include="Clases\Beans\MarcaComputadora.cs" />
     <Compile Include="Clases\Beans\Procesador.cs" />
+    <Compile Include="Clases\Beans\Proveedores.cs" />
     <Compile Include="Clases\Beans\SistemaOperativo.cs" />
     <Compile Include="Clases\Beans\TipoComputadora.cs" />
     <Compile Include="Clases\Beans\Tipo_accesorio.cs" />
@@ -419,8 +424,10 @@
     <Compile Include="Clases\Modelos\ModeloDepartamento.cs" />
     <Compile Include="Clases\Modelos\Conexion.cs" />
     <Compile Include="Clases\Modelos\ModeloActivoComputadora.cs" />
+    <Compile Include="Clases\Modelos\ModeloEmpleado.cs" />
     <Compile Include="Clases\Modelos\ModeloMarcaComputadora.cs" />
     <Compile Include="Clases\Modelos\ModeloProcesador.cs" />
+    <Compile Include="Clases\Modelos\ModeloProveedores.cs" />
     <Compile Include="Clases\Modelos\ModeloSistemaOperativo.cs" />
     <Compile Include="Clases\Modelos\ModeloTipoAccesorio.cs" />
     <Compile Include="Clases\Modelos\ModeloTipoComputadora.cs" />
@@ -493,6 +500,13 @@
       <DependentUpon>Mobiliario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Activos\ModeloComputadora.cs" />
+    <Compile Include="Vistas\Catalogos\Empleado.aspx.cs">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Empleado.aspx.designer.cs">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Catalogos\MarcaComputadora.aspx.cs">
       <DependentUpon>MarcaComputadora.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -506,6 +520,13 @@
     </Compile>
     <Compile Include="Vistas\Catalogos\Procesador.aspx.designer.cs">
       <DependentUpon>Procesador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Proveedores.aspx.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Proveedores.aspx.designer.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Catalogos\SistemaOperativo.aspx.cs">
       <DependentUpon>SistemaOperativo.aspx</DependentUpon>
@@ -541,6 +562,13 @@
     </Compile>
     <Compile Include="Vistas\Catalogos\Departamento.aspx.designer.cs">
       <DependentUpon>Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Catalogos\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Modelo\Demo.aspx.cs">
       <DependentUpon>Demo.aspx</DependentUpon>
